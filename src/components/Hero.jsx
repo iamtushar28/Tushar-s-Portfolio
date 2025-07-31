@@ -3,7 +3,7 @@ import { BiSolidBadgeCheck } from "react-icons/bi";
 
 const Hero = () => {
     return (
-        <section className='py-20 px-4 lg:py-0 lg:px-0 flex flex-col justify-center items-center'>
+        <section className='lg:h-screen mt-12 py-20 px-4 mb-12 lg:py-0 lg:px-0 flex flex-col justify-center items-center relative'>
 
             {/* hero title */}
             <div className='flex items-center lg:gap-40 gap-4' data-aos="fade-down">
@@ -14,7 +14,7 @@ const Hero = () => {
                     <div className='lg:text-xl text-sm flex items-center gap-1 lg:gap-4'>
                         <BiSolidBadgeCheck className='text-4xl md:text-3xl lg:text-5xl' />
                         <h4 className='font-[500] text-center'>
-                            Currently Available
+                            Open for Work🧑‍💻
                         </h4>
                     </div>
                     <span className='font-semibold text-2xl md:text-3xl'>{'}'}</span>
@@ -29,6 +29,10 @@ const Hero = () => {
                 <h1>
                     Developer
                 </h1>
+            </div>
+
+            {/* green blur visual */}
+            <div className='h-28 w-28 lg:h-48 lg:w-48 bg-[#14CF93] rounded-full blur-3xl absolute -bottom-8 right-0'>
             </div>
 
         </section>
