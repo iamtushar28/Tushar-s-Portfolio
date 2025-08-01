@@ -32,7 +32,7 @@ const Hero = () => {
             </div>
 
             {/* green blur visual */}
-            <div className='h-28 w-28 lg:h-48 lg:w-48 bg-[#14CF93] rounded-full blur-3xl absolute -bottom-8 right-0'>
+            <div className='h-28 w-28 lg:h-48 lg:w-48 bg-[#14CF93] rounded-full blur-[90px] absolute -bottom-16 right-20'>
             </div>
 
         </section>
