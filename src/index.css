@@ -9,3 +9,11 @@
 .italianno-regular {
   font-family: "Italianno", cursive;
 }
+
+/* In your CSS file */
+.paint-bg-section {
+  background-image: url('../public/paintbg.webp');
+  width: 100%;
+  height: auto;
+}
+

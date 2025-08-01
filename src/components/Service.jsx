@@ -23,7 +23,7 @@ const Service = () => {
     ]
 
     return (
-        <section className='w-full py-36 md:py-48 px-4 md:px-20 text-center flex flex-col gap-6 justify-center items-center'>
+        <section className='w-full pt-36 pb-22 md:pt-48 px-4 md:px-20 text-center flex flex-col gap-6 justify-center items-center'>
 
             <h1 className='text-4xl md:text-7xl text-zinc-700 font-semibold leading-13 md:leading-24'>
                 I'm crafting seamless digital experiences with <span className='text-zinc-800 bg-[#14cf94a9] px-1'>expertise</span> in

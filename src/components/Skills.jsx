@@ -34,8 +34,7 @@ const Skills = () => {
 
   return (
     <>
-      {/* <h4 className='italianno-regular text-3xl ml-4 text-[#14CF93] font-[500]'>I am good at</h4> */}
-      <h4 className='text-4xl md:text-6xl font-[500] text-zinc-700 lg:py-6 lg:px-16 p-4'>Tech <span className='italianno-regular text-5xl md:text-7xl text-[#14CF93]'>Stack</span></h4>
+      <h4 className='text-4xl md:text-7xl font-[500] text-zinc-700 lg:py-6 lg:px-16 p-4'>Tech <span className='italianno-regular text-5xl md:text-7xl text-[#14CF93]'>Stack</span></h4>
 
       <section className='w-full mb-4 px-3 flex flex-col-reverse md:flex-row justify-center gap-8'>
 
