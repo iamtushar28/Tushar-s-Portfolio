@@ -1,5 +1,6 @@
 import React from 'react'
 import Project1 from '/dev.png'
+import Project2 from '/p2.png'
 import { BsGithub } from "react-icons/bs";
 import { FiExternalLink } from "react-icons/fi";
 
@@ -51,7 +52,7 @@ const MyWork = () => {
 
                     {/* project image */}
                     <img
-                        src={Project1}
+                        src={Project2}
                         alt="Project1"
                         className="w-full h-full object-cover object-center group-hover:scale-110 transition-all duration-500"
                     />
