@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { motion } from "framer-motion";
 import SkillCard from './reusable/SkillCard'
 import ExpertSkillCard from './reusable/ExpertSkillCard'
 import MyImage from '/tushar28.png'
@@ -19,7 +20,20 @@ import { FiCoffee } from "react-icons/fi";
 
 const Skills = () => {
 
-  const [view, setView] = useState('location'); // 'location' or 'experience'
+  const cardVariants = {
+    hidden: { y: 80, opacity: 0 },
+    visible: (customDelay) => ({
+      y: 0,
+      opacity: 1,
+      transition: {
+        delay: customDelay, // custom delay per card
+        duration: 0.4,
+        ease: "easeOut",
+      },
+    }),
+  };
+
+  const [view, setView] = useState('experience'); // 'location' or 'experience'
 
   const isLocation = view === 'location';
   const isExperience = view === 'experience';
@@ -34,12 +48,23 @@ const Skills = () => {
 
   return (
     <>
-      <h4 className='text-4xl md:text-7xl font-[500] text-zinc-700 lg:py-6 lg:px-16 p-4'>Tech <span className='italianno-regular text-5xl md:text-7xl text-[#14CF93]'>Stack</span></h4>
+      <h4
+        className='text-4xl md:text-7xl font-[500] text-zinc-700 lg:py-6 lg:px-16 p-4'
+      >
+        Tech <span className='italianno-regular text-5xl md:text-7xl text-[#14CF93]'>Stack</span>
+      </h4>
 
-      <section className='w-full mb-4 px-3 flex flex-col-reverse md:flex-row justify-center gap-8'>
-
+      <section
+        className='w-full mb-4 px-3 flex flex-col-reverse md:flex-row justify-center gap-8'
+      >
         {/* location & experience card */}
-        <div className='w-full md:w-[45%] h-fit overflow-hidden border border-zinc-200 rounded-4xl'>
+        <motion.div
+          variants={cardVariants}
+          custom={0} // no delay for the first
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          className='w-full md:w-[45%] h-fit overflow-hidden border border-zinc-200 rounded-4xl'>
 
           <div className='relative'>
 
@@ -91,15 +116,6 @@ const Skills = () => {
           {/* Toggle Buttons */}
           <div className='py-6 lg:py-10 flex gap-4 md:gap-6 justify-center items-center'>
 
-            {/* show location */}
-            <button
-              onClick={() => setView('location')}
-              className={`px-3 py-2 rounded-3xl flex gap-1 items-center cursor-pointer transition-all duration-300 
-                ${isLocation ? 'text-[#14CF93] ring-1 ring-[#14CF93]' : 'hover:text-[#14CF93] hover:ring-1 ring-[#14CF93]'}`}>
-              <CiLocationArrow1 className='text-xl' />
-              I'm Live In
-            </button>
-
             {/* show experience */}
             <button
               onClick={() => setView('experience')}
@@ -109,12 +125,27 @@ const Skills = () => {
               My Experience
             </button>
 
+            {/* show location */}
+            <button
+              onClick={() => setView('location')}
+              className={`px-3 py-2 rounded-3xl flex gap-1 items-center cursor-pointer transition-all duration-300 
+                ${isLocation ? 'text-[#14CF93] ring-1 ring-[#14CF93]' : 'hover:text-[#14CF93] hover:ring-1 ring-[#14CF93]'}`}>
+              <CiLocationArrow1 className='text-xl' />
+              I'm Live In
+            </button>
+
           </div>
 
-        </div>
+        </motion.div>
 
         {/* skills card */}
-        <div className='w-full md:w-[45%] h-fit p-6 lg:p-8 rounded-4xl bg-[#14CF93] flex flex-col gap-6'>
+        <motion.div
+          variants={cardVariants}
+          custom={0.5} // no delay for the first
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          className='w-full md:w-[45%] h-fit p-6 lg:p-8 rounded-4xl bg-[#14CF93] flex flex-col gap-6'>
 
           <h4 className='font-semibold text-xl text-white'>I'm Good At🥇</h4>
 
@@ -135,7 +166,7 @@ const Skills = () => {
             />
           ))}
 
-        </div>
+        </motion.div>
 
       </section>
     </>

@@ -19,10 +19,32 @@ const Footer = () => {
 
                 <h2 className='text-4xl md:text-5xl font-[500] text-zinc-700 leading-12 md:leading-16'>Ready to scale up <br /> your business</h2>
 
-                <button className='px-8 h-[52px] w-fit text-lg text-white font-[500] bg-[#14CF93] rounded-4xl cursor-pointer flex gap-3 justify-center items-center'>
-                    Start a Project
-                    <FaArrowRightLong />
-                </button>
+                <a
+                    href="https://www.linkedin.com/in/tushar-suryawanshi-599806299/"
+                    target="_blank"
+                    className="group px-8 h-[52px] w-fit text-lg text-white font-[500] bg-[#14CF93] rounded-4xl cursor-pointer flex justify-center items-center gap-2 overflow-hidden"
+                >
+                    {/* Text */}
+                    <span className="relative h-[1.4em] flex gap-2 items-center overflow-hidden">
+                        <span className="block group-hover:translate-y-full transition-all duration-300">
+                            Start a Project
+                        </span>
+                        <span className="absolute top-[-100%] left-0 group-hover:top-0 transition-all duration-300">
+                            Start a Project
+                        </span>
+                    </span>
+
+                    {/* Icon */}
+                    <span className="relative h-[1.2em] flex items-center overflow-hidden">
+                        <span className="block group-hover:-translate-y-full transition-all duration-300">
+                            <FaArrowRightLong />
+                        </span>
+                        <span className="absolute top-full left-0 group-hover:top-0 transition-all duration-300">
+                            <FaArrowRightLong />
+                        </span>
+                    </span>
+                </a>
+
             </div>
 
             <div className='md:w-[28%] flex flex-col items-start'>
@@ -31,18 +53,22 @@ const Footer = () => {
 
                 <div className='flex gap-4 mt-6 md:mt-8'>
                     {/* Email button */}
-                    <button
+                    <a
+                        href='https://www.linkedin.com/in/tushar-suryawanshi-599806299'
+                        target='_blank'
                         className="h-16 w-16 text-3xl text-zinc-500 hover:text-white hover:bg-[#14CF93] hover:border-[#14CF93] border border-zinc-300 rounded-2xl flex justify-center items-center cursor-pointer transition-all duration-200"
                     >
                         <LuLinkedin />
-                    </button>
-                    <button
+                    </a>
+                    <a
+                        href='https://github.com/iamtushar28'
+                        target='_blank'
                         className="h-16 w-16 text-3xl text-zinc-500 hover:text-white hover:bg-[#14CF93] hover:border-[#14CF93] border border-zinc-300 rounded-2xl flex justify-center items-center cursor-pointer transition-all duration-200"
                     >
                         <FiGithub />
-                    </button>
+                    </a>
 
-                <img src={Icebear} alt="Icebear" className='h-16 w-16 rounded-2xl' />
+                    <img src={Icebear} alt="Icebear" className='h-16 w-16 rounded-2xl' />
 
                 </div>
 

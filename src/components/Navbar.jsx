@@ -23,31 +23,66 @@ const Navbar = () => {
             </div>
 
             {/* links */}
-            <div className='hidden lg:flex gap-12'>
+            <div className='hidden lg:flex items-center gap-12'>
 
-                <button className='text-lg hover:text-[#14CF93] font-[500] cursor-pointer transition-all duration-300'>
-                    Hey
-                </button>
-                <button className='text-lg hover:text-[#14CF93] font-[500] cursor-pointer transition-all duration-300'>
-                    Work
-                </button>
-                <button className='text-lg hover:text-[#14CF93] font-[500] cursor-pointer transition-all duration-300'>
-                    Services
-                </button>
-                <button className='text-lg hover:text-[#14CF93] font-[500] cursor-pointer transition-all duration-300'>
-                    About
-                </button>
+                <a href="#home" className="group relative h-[1.5em] overflow-hidden text-lg font-[500] cursor-pointer">
+                    <span className="block group-hover:-translate-y-full transition-all duration-300 text-black">
+                        Hey
+                    </span>
+                    <span className="absolute left-0 top-full block group-hover:top-0 transition-all duration-300 text-[#14CF93]">
+                        Hey
+                    </span>
+                </a>
 
-                <button className='w-[160px] h-[52px] text-lg text-white font-[500] bg-[#14CF93] rounded-4xl cursor-pointer flex gap-3 justify-center items-center'>
-                    Let's Talk
-                    <FaArrowRightLong />
-                </button>
+                <a href="#work" className="group relative h-[1.5em] overflow-hidden text-lg font-[500] cursor-pointer">
+                    <span className="block group-hover:-translate-y-full transition-all duration-300 text-black">
+                        Work
+                    </span>
+                    <span className="absolute left-0 top-full block group-hover:top-0 transition-all duration-300 text-[#14CF93]">
+                        Work
+                    </span>
+                </a>
+
+                <a href="#contact" className="group relative h-[1.5em] overflow-hidden text-lg font-[500] cursor-pointer">
+                    <span className="block group-hover:-translate-y-full transition-all duration-300 text-black">
+                        Contact
+                    </span>
+                    <span className="absolute left-0 top-full block group-hover:top-0 transition-all duration-300 text-[#14CF93]">
+                        Contact
+                    </span>
+                </a>
+
+                <a
+                    href="https://www.linkedin.com/in/tushar-suryawanshi-599806299/"
+                    target="_blank"
+                    className="group w-[160px] h-[52px] text-lg text-white font-[500] bg-[#14CF93] rounded-4xl cursor-pointer flex justify-center items-center gap-2 overflow-hidden"
+                >
+                    {/* Text */}
+                    <span className="relative h-[1.2em] flex items-center overflow-hidden">
+                        <span className="block group-hover:translate-y-full transition-all duration-300">
+                            Let's Talk
+                        </span>
+                        <span className="absolute top-[-100%] left-0 group-hover:top-0 transition-all duration-300">
+                            Let's Talk
+                        </span>
+                    </span>
+
+                    {/* Icon */}
+                    <span className="relative h-[1.2em] flex items-center overflow-hidden">
+                        <span className="block group-hover:-translate-y-full transition-all duration-300">
+                            <FaArrowRightLong />
+                        </span>
+                        <span className="absolute top-full left-0 group-hover:top-0 transition-all duration-300">
+                            <FaArrowRightLong />
+                        </span>
+                    </span>
+                </a>
 
             </div>
 
             {/* open sidebar button */}
             <button className='block md:hidden text-3xl'>
-                <TbMenu3/>
+                <TbMenu3 />
             </button>
 
         </nav>

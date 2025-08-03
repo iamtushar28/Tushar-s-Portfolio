@@ -1,7 +1,20 @@
 import React from 'react'
+import { motion } from "framer-motion";
 import { MdArrowOutward } from "react-icons/md";
 
 const Service = () => {
+
+    const zoomInVariant = {
+        hidden: { scale: 0.8, opacity: 0 },
+        visible: {
+            scale: 1,
+            opacity: 1,
+            transition: {
+                duration: 0.3,
+                ease: "easeOut",
+            },
+        },
+    };
 
     const myService = [
         {
@@ -23,7 +36,14 @@ const Service = () => {
     ]
 
     return (
-        <section className='w-full pt-36 pb-22 md:pt-48 px-4 md:px-20 text-center flex flex-col gap-6 justify-center items-center'>
+        <motion.section
+            id="service"
+            variants={zoomInVariant}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className='w-full pt-36 pb-22 md:pt-48 px-4 md:px-20 text-center flex flex-col gap-6 justify-center items-center'
+        >
 
             <h1 className='text-4xl md:text-7xl text-zinc-700 font-semibold leading-13 md:leading-24'>
                 I'm crafting seamless digital experiences with <span className='text-zinc-800 bg-[#14cf94a9] px-1'>expertise</span> in
@@ -45,7 +65,7 @@ const Service = () => {
                 My focus on UI development ensures <span className='text-zinc-800 bg-[#14cf94a9] px-1'>responsive</span> designs that elevate your brand across every screen.
             </h1>
 
-        </section>
+        </motion.section>
     )
 }
 

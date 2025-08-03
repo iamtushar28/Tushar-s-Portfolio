@@ -12,7 +12,7 @@
 
 /* In your CSS file */
 .paint-bg-section {
-  background-image: url('../public/paintbg.webp');
+  background-image: url('/paintbg.webp');
   width: 100%;
   height: auto;
 }
