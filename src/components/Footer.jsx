@@ -3,6 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import { FaCircle } from "react-icons/fa";
 import { LuLinkedin } from "react-icons/lu";
 import { FiGithub } from "react-icons/fi";
+import Icebear from '/icebear.webp'
 
 const Footer = () => {
     return (
@@ -40,7 +41,11 @@ const Footer = () => {
                     >
                         <FiGithub />
                     </button>
+
+                <img src={Icebear} alt="Icebear" className='h-16 w-16 rounded-2xl' />
+
                 </div>
+
 
             </div>
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Project1 from '/project1.avif'
+import Project1 from '/dev.png'
 import { BsGithub } from "react-icons/bs";
 import { FiExternalLink } from "react-icons/fi";
 
@@ -21,11 +21,11 @@ const MyWork = () => {
                     />
 
                     {/* project info */}
-                    <div className="w-[92%] h-24 lg:h-32 px-4 lg:px-8 bg-white/90 rounded-3xl flex justify-between items-center absolute bottom-6 left-1/2 -translate-x-1/2">
+                    <div className="w-[92%] h-24 lg:h-32 px-4 lg:px-8 bg-white/20 rounded-3xl flex justify-between items-center absolute bottom-6 left-1/2 -translate-x-1/2">
 
                         <div>
                             {/* project name */}
-                            <h2 className='text-lg lg:text-2xl font-semibold'>DEV</h2>
+                            <h2 className='text-lg lg:text-2xl font-semibold text-white'>DEV</h2>
                             <p className='text-sm text-zinc-600'>AI Powered Blog Platform</p>
                         </div>
 
