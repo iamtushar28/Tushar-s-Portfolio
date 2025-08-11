@@ -1,9 +1,5 @@
 import React from 'react'
 import { motion } from "framer-motion";
-import Cybershop from '/cybershop.png'
-import Dev from '/dev.png'
-import Travelo from '/travelo.png'
-import Bettercom from '/better.png'
 import { BsGithub } from "react-icons/bs";
 import { FiExternalLink } from "react-icons/fi";
 
@@ -24,28 +20,28 @@ const MyWork = () => {
 
     const projects = [
         {
-            previewimage: Dev,
+            previewimage: '/dev.webp',
             name: 'Dev',
             Description: 'AI Powered Blog Webapp',
             hostlink: 'https://dev-iota-one.vercel.app/',
             githublink: 'https://github.com/iamtushar28/dev',
         },
         {
-            previewimage: Cybershop,
+            previewimage: '/cybershop.webp',
             name: 'Cybershop',
             Description: 'Ecommerce Shop',
             hostlink: 'https://mobileshop-reactjs.netlify.app/',
             githublink: 'https://github.com/iamtushar28/mobileShop-reactjs',
         },
         {
-            previewimage: Travelo,
+            previewimage: 'travelo.webp',
             name: 'Travelo',
             Description: 'Travel Website',
             hostlink: 'https://travelo28.vercel.app/',
             githublink: 'https://github.com/iamtushar28/travelo',
         },
         {
-            previewimage: Bettercom,
+            previewimage: 'better.webp',
             name: 'Better.com',
             Description: 'Better Mortagae landing page',
             hostlink: 'https://bettercom-bice.vercel.app/',

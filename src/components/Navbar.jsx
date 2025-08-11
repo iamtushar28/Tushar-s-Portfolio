@@ -1,5 +1,4 @@
 import React from 'react'
-import MyImage from '/tushar28.png'
 import { FaStar } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { TbMenu3 } from "react-icons/tb";
@@ -11,7 +10,7 @@ const Navbar = () => {
             <div className='flex gap-4 items-center'>
                 {/* profile image */}
                 <div className='h-14 w-14 lg:h-[64px] lg:w-[64px] rounded-full relative'>
-                    <img src={MyImage} alt="MyImage" className='h-14 w-14 lg:h-[64px] lg:w-[64px] rounded-full' />
+                    <img src='/tushar28.webp' alt="MyImage" className='h-14 w-14 lg:h-[64px] lg:w-[64px] rounded-full' />
                     {/* badge */}
                     <div className='h-[26px] w-[26px] text-white bg-[#14CF93] rounded-full flex justify-center items-center absolute bottom-0 -right-2'>
                         <FaStar className='text-sm' />

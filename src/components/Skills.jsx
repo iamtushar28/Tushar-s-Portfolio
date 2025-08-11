@@ -2,11 +2,6 @@ import React, { useState } from 'react'
 import { motion } from "framer-motion";
 import SkillCard from './reusable/SkillCard'
 import ExpertSkillCard from './reusable/ExpertSkillCard'
-import MyImage from '/tushar28.png'
-import MapImage from '/map.svg'
-import GridImage from '/grid.png'
-import StarBounceImage from '/bouncestar.svg'
-import Hashtag from '/hashtag.svg'
 import { GiIndiaGate } from "react-icons/gi";
 import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
@@ -76,9 +71,9 @@ const Skills = () => {
                   India
                 </button>
                 {/* map background */}
-                <img src={MapImage} alt="Map of India" className='w-full h-72 md:h-[19rem] lg:h-[28.5rem]' />
+                <img src='/map.webp' alt="Map of India" className='w-full h-72 md:h-[19rem] lg:h-[28.5rem]' />
                 <div className='h-36 w-36 md:h-44 md:w-44 bg-[#ffdd5736] rounded-full flex justify-center items-center absolute top-[30%] left-[30%] lg:left-[34%]'>
-                  <img src={MyImage} alt="User Avatar" className='h-14 w-14 lg:h-[64px] lg:w-[64px] rounded-full' />
+                  <img src='/tushar28.webp' alt="User Avatar" className='h-14 w-14 lg:h-[64px] lg:w-[64px] rounded-full' />
                 </div>
               </>
             )}
@@ -87,11 +82,11 @@ const Skills = () => {
             {isExperience && (
               <>
                 {/* grid background */}
-                <img src={GridImage} alt="Experience Grid" className='w-full h-72 md:h-[19rem] lg:h-[28.5rem]'
+                <img src='/grid.webp' alt="Experience Grid" className='w-full h-72 md:h-[19rem] lg:h-[28.5rem]'
                 />
                 <div className='absolute inset-0 flex flex-col gap-8 justify-center items-center px-2'>
                   {/* visual image */}
-                  <img src={StarBounceImage} alt="Star Animation" className='h-14 lg:h-32' />
+                  <img src='/bouncestar.webp' alt="Star Animation" className='max-h-14 lg:max-h-32' />
                   <div className='flex flex-col gap-4 lg:gap-6'>
                     {[
                       { title: 'Next.js Developer', tag: 'Present' },
@@ -100,7 +95,7 @@ const Skills = () => {
                       { title: 'Internshala/Ethical Hacking', tag: '2024' },
                     ].map((item, idx) => (
                       <div key={idx} className='flex items-center gap-2'>
-                        <img src={Hashtag} alt="Bullet Point" />
+                        <img src='/hashtag.webp' alt="Bullet Point" className='h-8' />
                         <h4 className='text-sm lg:text-xl font-semibold text-zinc-700'>
                           {item.title}{' '}
                           <span className='px-3 py-2 bg-[#ffdd57] text-xs font-medium rounded-3xl'>{item.tag}</span>
