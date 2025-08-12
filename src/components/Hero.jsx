@@ -26,12 +26,12 @@ const Hero = () => {
                     initial={{ y: -100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.2, ease: "easeOut" }}
-                    className="md:text-[100px] lg:text-[130px] text-[40px] font-[600]"
+                    className="md:text-[100px] lg:text-[130px] text-[60px] font-[700]"
                 >
-                    Creative
+                     <span className='hidden md:block'>Creative</span> <span className='block md:hidden'>I'm</span>
                 </motion.h1>
 
-                <div className="text-[#14CF93] flex gap-2 items-center">
+                <div className="text-[#14CF93] hidden md:flex gap-2 items-center">
                     <span className="font-semibold text-2xl md:text-3xl">{'{'}</span>
                     <motion.div
                         className="lg:text-xl text-sm flex items-center gap-1 lg:gap-4"
@@ -51,9 +51,9 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className="md:text-[100px] lg:text-[130px] text-[44px] font-[500] flex gap-6 lg:gap-12 items-center">
+            <div className="md:text-[100px] lg:text-[130px] text-[44px] font-[500] flex gap-4 lg:gap-12 items-center">
                 <motion.h2
-                    className="italianno-regular text-5xl md:text-[100px] lg:text-[130px] font-[500] text-[#14CF93]"
+                    className="text-5xl md:text-[100px] lg:text-[130px] font-[600] text-[#14CF93]"
                     initial={{ x: -100, opacity: 0 }}
                     animate={{ x: 0, opacity: 1 }}
                     transition={{ duration: 0.2, ease: "easeOut", delay: 0.4 }}
@@ -62,7 +62,7 @@ const Hero = () => {
                 </motion.h2>
 
                 <motion.h1
-                    className="font-[600]"
+                    className="font-[600] tracking-tighter"
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 0.2, ease: "easeOut", delay: 0.6 }}
