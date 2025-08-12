@@ -20,6 +20,14 @@ const MyWork = () => {
 
     const projects = [
         {
+            previewimage: '/elvia.webp',
+            name: 'Elvia',
+            featured: 'New',
+            Description: 'Multiplayer Quiz Platform',
+            hostlink: 'http://elvia-ai.vercel.app/',
+            githublink: 'https://github.com/iamtushar28/Elvia',
+        },
+        {
             previewimage: '/dev.webp',
             name: 'Dev',
             Description: 'AI Powered Blog Webapp',
@@ -80,7 +88,12 @@ const MyWork = () => {
 
                             <div>
                                 {/* project name */}
-                                <h2 className='text-lg lg:text-2xl font-semibold text-white'>{projects.name}</h2>
+                                <h2 className='text-lg lg:text-2xl font-semibold text-white'>
+                                    {projects.name}
+                                    {projects.featured && (
+                                        <span className='text-sm ml-4 text-green-400 animate-pulse'>{projects.featured}</span>
+                                    )}
+                                </h2>
                                 <p className='text-sm text-white/80'>{projects.Description}</p>
                             </div>
 
