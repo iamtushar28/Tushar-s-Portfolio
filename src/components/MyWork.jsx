@@ -58,7 +58,7 @@ const MyWork = () => {
     ]
 
     return (
-        <section id='work' className='lg:py-6 lg:px-16 p-4 w-full'>
+        <section id='work' className='lg:py-6 lg:px-16 p-2 w-full'>
             <h4
                 className='text-4xl md:text-7xl font-[500] text-zinc-700 mb-12'>Selected <span className='italianno-regular text-5xl md:text-7xl text-[#14CF93]'>Work</span>
             </h4>

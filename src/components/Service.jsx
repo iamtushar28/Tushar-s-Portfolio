@@ -42,14 +42,17 @@ const Service = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className='w-full pt-36 pb-22 md:pt-48 px-4 md:px-20 text-center flex flex-col gap-6 justify-center items-center'
+            className='w-full pt-8 pb-22 md:pt-32 px-4 md:px-20 text-center flex flex-col md:gap-6 justify-center items-center'
         >
+
+            <img src="/undraw_graduation_u7uc.svg" alt="undraw_designer_efwz" className='h-64 -mb-6 md:-mb-0' />
+
 
             <h1 className='text-4xl md:text-7xl text-zinc-700 font-semibold leading-13 md:leading-24'>
                 I'm crafting seamless digital experiences with <span className='text-zinc-800 bg-[#14cf94a9] px-1'>expertise</span> in
             </h1>
 
-            <div className='flex flex-wrap justify-center gap-4 md:gap-5'>
+            <div className='mt-2 flex flex-wrap justify-center gap-2 md:gap-5'>
                 {/* service button */}
                 {myService.map((myService, idx) => (
                     <button className={`py-3 md:py-4 px-6 md:px-8 text-lg md:text-2xl text-white font-semibold ${myService.color} rounded-[3rem] flex gap-3 items-center cursor-pointer hover:scale-95 transition-all duration-200`}>

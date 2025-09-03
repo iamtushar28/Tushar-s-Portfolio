@@ -48,7 +48,7 @@ const WorkProcess = () => {
     ]
 
     return (
-        <section className="lg:py-24 lg:px-16 py-16 px-4 w-full">
+        <section className="lg:py-24 lg:px-16 py-16 px-3 w-full">
 
             {/* title */}
             <h4 className='text-4xl md:text-7xl font-[500] text-zinc-700 mb-12 md:mb-16 text-center md:text-start'>
@@ -95,6 +95,11 @@ const WorkProcess = () => {
                 })}
 
 
+            </div>
+
+            <div className='w-full pt-32 flex gap-10 flex-col justify-center items-center'>
+                <img src="/undraw_progressive-app_9517.svg" alt="undraw_designer_efwz" className='h-64' />
+                <h4 className='text-2xl text-zinc-500 text-center'>I ♥️ Frontend Developement</h4>
             </div>
 
         </section>

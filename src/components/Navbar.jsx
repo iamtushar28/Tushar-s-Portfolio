@@ -5,7 +5,7 @@ import { TbMenu3 } from "react-icons/tb";
 
 const Navbar = () => {
     return (
-        <nav className='lg:py-6 lg:px-16 p-4 bg-white flex items-center justify-between fixed top-0 left-0 right-0 z-40'>
+        <nav className='lg:py-6 lg:px-16 p-4 bg-white border-b border-zinc-100 flex items-center justify-between fixed top-0 left-0 right-0 z-40'>
 
             <div className='flex gap-4 items-center'>
                 {/* profile image */}
